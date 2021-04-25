@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Business Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="static/businesscard.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    window.onload = function(){
+      var name = "Silvia Martin";
+      var jobtitle = "SEO Consultant";
+      var phone="+44791922345"
+      var email="silvia_martin@hotmail.com"
+      var linkedin="https://www.linkedin.com/in/martinsilvia/"
+      var url="http://www.trebole-marketing.com"
+      var mailto="<a href=\"mailto:"+email+"\">"+email+"</a>"
+      var linkedin_ref="<a href=\""+linkedin+"\">"+linkedin+"</a>"
+      var website="<a href=\""+url+"\">"+url+"</a>"
+      document.getElementById('name').innerHTML = name;
+      document.getElementById('jobtitle').innerHTML = jobtitle;
+      document.getElementById('phone').innerHTML = phone;
+      document.getElementById('email').innerHTML = mailto;
+      document.getElementById('website').innerHTML = website;
+      document.getElementById('linkedin_ref').innerHTML= linkedin_ref;
+};
+</script>
+</head>
+<body>
+
+<div class="c-main">
+<div class="o-container" style="background-size: 10%; background-image: url('static/background-cover.png');">
+  <div class="c-hero-grid row">
+    <div class="c-hero__grid__txt">
+
+      <h2>&nbsp</h2>
+      <div class="typewriter"><h1 class="c-txt--h3" id="name" style="color:#8c4b6a;"></h1></div>
+      <h2 class="c-txt--h4" id="jobtitle"></h2>
+      <table>
+      <tr><td class = "c-txt--h4"><img src="https://img.icons8.com/fluent-systems-regular/2x/003057/phone-squared.png"></td><td style="text-align: left;" id="phone"></td></tr>
+      <tr><td class = "c-txt--h4"><img src="https://img.icons8.com/material-outlined/2x/003057/email-open.png"</td><td style="text-align: left;" id="email"></td></tr>
+      <tr><td class = "c-txt--h4"><img src="https://img.icons8.com/fluent-systems-regular/2x/003057/web-globe.png"></td><td style="text-align: left;" id="website"></td></tr>
+      <tr><td class = "c-txt--h4"><img src="https://img.icons8.com/material-outlined/2x/003057/linkedin.png"></td><td style="text-align: left;" id="linkedin_ref"></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
